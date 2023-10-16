@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2a2c2e;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.heure{
+    color: white;
+    font-size: 40px; 
+}
+
+.label {
+    color: white;
+    flex-grow: 1;
+    font-size: 40px; /* Augmentation de la taille de la police pour le titre */
+}
+
+.table-container {
+    width: 100%;
+    overflow-y: auto;
+}
+
+.trains-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    font-size: 35px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border: none;
+    font-weight: bold;
+}
+
+th {
+    background-color: #0b4b93;
+}
+tr:nth-child(even) {
+    background-color: #003a79; /* Couleur de fond pour les lignes paires */
+}
+
+tr:nth-child(odd) {
+    background-color: #0064ab; /* Couleur de fond pour les lignes impaires */
+}
+
+.retard {
+    color: #e86d2b;
+    font-weight: bold;
+}
+
+.depart-label {
+    color: #1a51c9;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 150px;
+}
+
+.disclaimer {
+    color: white;
+    font-size: 20px; /* Augmentation de la taille de la police pour l'avertissement */
+    margin-top: 20px;
+}
+
+.departure-time {
+    color: #ffed02;
+    font-weight: bold;
+}
+
+.train-status{
+    color: #ffed02;
+    font-weight: bold;
+}
+
+
+.disclaimer {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.disclaimer i {
+    display: inline-block;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

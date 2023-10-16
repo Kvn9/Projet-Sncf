@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Prochains Trains - Paris Est</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div class="header">
+            <div class="label">Prochains trains aux d&eacute;parts de Paris EST</div>
+            <h2 id="heure" class="heure"></h2>
+        </div>
+        <div class="table-container">
+            <table class="trains-table" id="trains-container">
+                <thead>
+                    <tr>
+                        <th>Train</th>
+                        <th>Num&eacute;ro</th>
+                        <th>Heure</th>
+                        <th>&Eacute;tat</th>
+                        <th>Destination</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="disclaimer">
+            <div class="label"><i>*Informations &agrave; titre indicatif - l'&eacute;tablissement ne peut &ecirc;tre tenu responsable en cas d'erreur d'affichage</i></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
